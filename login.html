@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Inicio de sesion</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="gmail">Correo electrónico</label>
+                <input type="email" id="gmail" name="email" required placeholder="Ingrese su correo">
+            </div>
+            <div class="form-group position-relative">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required placeholder="Ingrese su contraseña">
+                <span id="togglePassword" class="toggle-password position-absolute" style="top: 38px; right: 10px; cursor: pointer;">
+                    🔒
+                </span>
+            </div>
+            <button type="button" class="btn" id="Ingresar">Iniciar sesión</button>
+            <div class="register-link">
+                <a href="registro.html" class="register-link">¿No tienes cuenta? Registrarse</a>
+                <a href="index.html" class="register-link">Volver al inicio</a>
+            </div>
+        </form>
+    </div>
+
+    <script type="module" src="login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const passwordField = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function () {
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+            this.textContent = type === 'password' ? '🔒' : '🔓';
+        });
+    </script>
+</body>
+</html>

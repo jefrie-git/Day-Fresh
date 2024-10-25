@@ -1,0 +1,70 @@
+body {
+    background-image: url('fondo-login.png'); /* Establece una imagen de fondo */
+    background-size: cover; /* La imagen cubre todo el fondo, adaptándose al tamaño */
+    background-position: center; /* La imagen se posiciona en el centro de la pantalla */
+    font-family: 'Arial', sans-serif; /* Define la fuente principal de la página */
+    height: 100vh; /* La altura del cuerpo ocupa el 100% de la ventana del navegador */
+    display: flex; /* Utiliza Flexbox para la disposición del contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.form-container {
+  
+    padding: 40px; /* Espacio interno de 40px alrededor del contenido */
+    border-radius: 10px; /* Bordes redondeados de 10px */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Sombra de 5px de desplazamiento y 15px de desenfoque */
+    max-width: 450px; /* Ancho máximo del contenedor de 450px */
+    width: 100%; /* El contenedor ocupa el 100% del ancho disponible */
+    text-align: center; /* El texto dentro del contenedor se alinea al centro */
+    color: #ffffff; /* Color del texto blanco */
+}
+
+h1 {
+    margin-bottom: 30px; /* Espacio inferior de 30px debajo del título */
+    font-size: 24px; /* Tamaño de fuente del título de 24px */
+    font-weight: bold; /* Fuente en negrita */
+}
+
+.form-group input {
+    width: 100%; /* El input ocupa el 100% del ancho del contenedor */
+    padding: 10px; /* Espacio interno de 10px */
+    background-color: #2c2c2c; /* Fondo del input gris oscuro */
+    border: 1px solid #ffffff; /* Borde blanco de 1px de grosor */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    color: #ffffff; /* Color del texto blanco */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+}
+
+.form-group input::placeholder {
+    color: #ffffff; /* Color del texto del placeholder blanco */
+}
+
+.btn-primary {
+    background-color: #ffffff; /* Fondo blanco del botón */
+    color: #000000; /* Texto del botón en negro */
+    padding: 10px 20px; /* Espacio interno de 10px vertical y 20px horizontal */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados de 5px */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Muestra el cursor de pointer al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave de 0.3s al cambiar el color de fondo */
+}
+
+.btn-primary:hover {
+    background-color: #000000; /* Cambia el color de fondo del botón a negro cuando se pasa el ratón por encima */
+}
+
+.text-center {
+    margin-top: 20px; /* Añade un margen superior de 20px */
+}
+
+.login-link {
+    color: #ffffff; /* Color del enlace en blanco */
+    text-decoration: none; /* Sin subrayado en el enlace */
+}
+
+.login-link:hover {
+    color: #f1f1f1; /* Cambia el color del enlace a un blanco más claro cuando se pasa el ratón por encima */
+}

@@ -1,0 +1,169 @@
+/* nuevo.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('bubbles.png');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajustes para la barra de navegación */
+.navbar {
+    background-color: #009BC3;
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #b3c1f2 !important;
+}
+
+/* Contenedor principal con ajustes de tamaño */
+.container {
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 2rem;
+}
+
+/* Colores de los formularios */
+.form-label {
+    color: black;
+}
+
+.form-control {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background-color: #A7CF30;
+    color: #ffffff;
+    border: 1px solid #0d47a1;
+    box-shadow: 0px 0px 10px rgba(13, 71, 161, 0.5);
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #0d47a1;
+    border-color: #0d47a1;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0a357f;
+    border-color: #0a357f;
+}
+
+/* Tabla de productos */
+table {
+    color: #ffffff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+}
+
+thead {
+    background-color: #0d47a1;
+    color: #ffffff;
+}
+
+td img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.btn-danger {
+    background-color: #e53935;
+    border-color: #e53935;
+}
+
+.btn-danger:hover {
+    background-color: #d32f2f;
+    border-color: #d32f2f;
+}
+
+/* Media Queries para pantallas móviles */
+@media (max-width: 768px) {
+    /* Contenedor y padding más pequeño */
+    .container {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    /* Ajuste en las fuentes y botones para pantallas pequeñas */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 1rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary, .btn-danger {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* Ajuste en la tabla de productos */
+    table {
+        font-size: 0.9rem;
+        overflow-x: auto; /* Scroll horizontal para tablas */
+    }
+
+    td img {
+        max-width: 60px; /* Imágenes más pequeñas en móviles */
+    }
+
+    /* Ajuste de ancho para el campo del archivo */
+    #inputFile {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajuste para pantallas más pequeñas (como celulares en modo retrato) */
+    .container {
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary, .btn-danger {
+        font-size: 0.8rem;
+        padding: 6px;
+    }
+
+    /* Tabla de productos para móviles */
+    table {
+        width: 100%;
+        font-size: 0.8rem;
+        overflow-x: auto;
+    }
+
+    td img {
+        max-width: 50px;
+    }
+}
